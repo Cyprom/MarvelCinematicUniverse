@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="Cyprom.MarvelCinematicUniverse.Controls.SearchResultControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" d:DesignHeight="50" d:DesignWidth="500">
+    <Border BorderBrush="Black" BorderThickness="1" Margin="10,5,10,5">
+        <Grid Background="#707070">
+            <Grid.Resources>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Margin" Value="5" />
+                    <Setter Property="FontSize" Value="14" />
+                    <Setter Property="FontWeight" Value="Normal" />
+                </Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Setter Property="Margin" Value="5" />
+                    <Setter Property="FontSize" Value="12" />
+                    <Setter Property="FontWeight" Value="Normal" />
+                    <Setter Property="FontFamily" Value="Arial" />
+                    <Setter Property="BorderThickness" Value="0" />
+                    <Setter Property="IsReadOnly" Value="True" />
+                    <Setter Property="TextWrapping" Value="Wrap" />
+                </Style>
+            </Grid.Resources>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Name="txtType" VerticalAlignment="Center" FontFamily="Copperplate Gothic Bold" Foreground="DarkRed" />
+            <TextBlock Grid.Column="1" Name="txtCompact" VerticalAlignment="Center" FontFamily="Tekton Pro" Margin="5,10,5,5" />
+            <TextBox Grid.Column="2" Name="txtFull" Background="DarkGray" />
+            <Button Grid.Column="3" ToolTip="Find in overview" VerticalAlignment="Center" Click="ToOverview">
+                <Image Source="../Images/goto.png" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+            </Button>
+        </Grid>
+    </Border>
+</UserControl>

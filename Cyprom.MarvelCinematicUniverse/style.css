@@ -1,0 +1,22 @@
+﻿* {
+    background: #808080;
+}
+
+h1 {
+    color: #8B0000;
+    font-family: 'Copperplate Gothic Bold';
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Tekton Pro';
+    margin-top: 40px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 20px;
+}

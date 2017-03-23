@@ -1,0 +1,39 @@
+﻿<Window x:Class="Cyprom.MarvelCinematicUniverse.Windows.BuiltinMediaPlayer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Height="600"
+        Width="800"
+        Closing="Window_Closing">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <MediaElement Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Name="medPlayer" LoadedBehavior="Manual" ScrubbingEnabled="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MouseDown="PlayerClicked" MediaOpened="MediaOpened" />
+
+        <Slider Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Name="sldTimeslider" ValueChanged="TimeChanged" HorizontalAlignment="Stretch" Margin="10,5,10,5" />
+        
+        <Button Grid.Row="2" Grid.Column="0" Name="btnPlay" ToolTip="Play" Click="Play" VerticalAlignment="Bottom" Visibility="Collapsed">
+            <Image Source="../Images/play.png" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        </Button>
+        <Button Grid.Row="2" Grid.Column="0" Name="btnPause" ToolTip="Pause" Click="Pause" VerticalAlignment="Bottom">
+            <Image Source="../Images/pause.png" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        </Button>
+        <Button Grid.Row="2" Grid.Column="1" Name="btnStop" ToolTip="Stop" Click="Stop" VerticalAlignment="Bottom">
+            <Image Source="../Images/stop.png" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        </Button>
+        <Button Grid.Row="2" Grid.Column="2" Name="btnFullScreen" ToolTip="Full screen" Click="GoFullScreen" VerticalAlignment="Bottom">
+            <Image Source="../Images/fullscreen.png" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        </Button>
+        <Button Grid.Row="2" Grid.Column="2" Name="btnRevertToWindow" ToolTip="Revert to window size" Click="RevertToWindow" VerticalAlignment="Bottom" Visibility="Collapsed">
+            <Image Source="../Images/revert.png" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        </Button>
+    </Grid>
+</Window>

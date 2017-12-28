@@ -333,7 +333,7 @@
   <Shows>
     <Show>
       <Denominator>Agent Carter</Denominator>
-      <Netflix>false</Netflix>
+      <Network>ABC</Network>
       <IMDbLink>http://www.imdb.com/title/tt3475734/</IMDbLink>
       <Future>false</Future>
       <Description>In 1946, Peggy Carter is relegated to secretarial duties in the Strategic Scientific Reserve (SSR). When Howard Stark is accused of treason, he secretly recruits Peggy to clear his name with the help of his butler, Edwin Jarvis.</Description>
@@ -520,7 +520,7 @@
     </Show>
     <Show>
       <Denominator>Agents Of Shield</Denominator>
-      <Netflix>false</Netflix>
+      <Network>ABC</Network>
       <IMDbLink>http://www.imdb.com/title/tt2364582/</IMDbLink>
       <Description>The missions of the Strategic Homeland Intervention, Enforcement and Logistics Division.</Description>
       <Future>false</Future>
@@ -1226,8 +1226,8 @@
       </Seasons>
     </Show>
     <Show>
-      <Denominator>Cloak and Dagger</Denominator>
-      <Netflix>false</Netflix>
+      <Denominator>Cloak And Dagger</Denominator>
+      <Network>Freeform</Network>
       <IMDbLink>http://www.imdb.com/title/tt5614844/</IMDbLink>
       <Future>true</Future>
       <Description>Two teenagers from very different backgrounds find themselves burdened and awakened to newly acquired superpowers while falling in love.</Description>
@@ -1244,7 +1244,7 @@
     </Show>
     <Show>
       <Denominator>Damage Control</Denominator>
-      <Netflix>false</Netflix>
+      <Network>ABC</Network>
       <IMDbLink>http://www.imdb.com/title/tt5081452</IMDbLink>
       <Future>true</Future>
       <Description>Based on the organization created in the Marvel Comic universe. Damage Control is an entity headed by a financial steward that tries to repair, replace or remediate collateral damage (originally in New York) caused by fights involving superheroes and super villains. This was before government legislated such regulation initiating Marvel's Civil War.</Description>
@@ -1261,7 +1261,7 @@
     </Show>
     <Show>
       <Denominator>Daredevil</Denominator>
-      <Netflix>true</Netflix>
+      <Network>Netflix</Network>
       <IMDbLink>http://www.imdb.com/title/tt3322312/</IMDbLink>
       <Description>Matt Murdock, with his other senses superhumanly enhanced, fights crime as a blind Lawyer by day, and vigilante by night.</Description>
       <Future>false</Future>
@@ -1528,7 +1528,7 @@
     </Show>
     <Show>
       <Denominator>Inhumans</Denominator>
-      <Netflix>false</Netflix>
+      <Network>ABC</Network>
       <IMDbLink>http://www.imdb.com/title/tt4154858/</IMDbLink>
       <Future>true</Future>
       <Description></Description>
@@ -1545,7 +1545,7 @@
     </Show>
     <Show>
       <Denominator>Iron Fist</Denominator>
-      <Netflix>true</Netflix>
+      <Network>Netflix</Network>
       <IMDbLink>http://www.imdb.com/title/tt3322310/</IMDbLink>
       <Description>A young man is bestowed with incredible martial arts skills and a mystical force known as the Iron Fist.</Description>
       <Future>true</Future>
@@ -1562,7 +1562,7 @@
     </Show>
     <Show>
       <Denominator>Jessica Jones</Denominator>
-      <Netflix>true</Netflix>
+      <Network>Netflix</Network>
       <IMDbLink>http://www.imdb.com/title/tt2357547/</IMDbLink>
       <Description>A former superhero decides to reboot her life by becoming a private investigator.</Description>
       <Future>false</Future>
@@ -1704,7 +1704,7 @@
     </Show>
     <Show>
       <Denominator>Luke Cage</Denominator>
-      <Netflix>true</Netflix>
+      <Network>Netflix</Network>
       <IMDbLink>http://www.imdb.com/title/tt3322314/</IMDbLink>
       <Description>Given superstrength and durability by a sabotaged experiment, a wrongly accused man escapes prison to become a superhero for hire.</Description>
       <Future>false</Future>
@@ -1845,25 +1845,8 @@
       </Seasons>
     </Show>
     <Show>
-      <Denominator>Most Wanted</Denominator>
-      <Netflix>false</Netflix>
-      <IMDbLink>http://www.imdb.com/title/tt4595412/</IMDbLink>
-      <Future>true</Future>
-      <Description>A spin-off from Marvel's "Agents of S.H.I.E.L.D." focusing on Bobby Morse (Mockingbird) and Lance Hunter.</Description>
-      <Seasons>
-        <Season>
-          <Number>1</Number>
-          <Year>2016</Year>
-          <IMDbLink></IMDbLink>
-          <Future>true</Future>
-          <Episodes>
-          </Episodes>
-        </Season>
-      </Seasons>
-    </Show>
-    <Show>
       <Denominator>Slingshot</Denominator>
-      <Netflix>false</Netflix>
+      <Network>ABC</Network>
       <IMDbLink></IMDbLink>
       <Description>Slingshot features the character of Elena "Yo-Yo" Rodriguez, an Inhuman with the ability to move with super-speed. As a person with powers, she must sign the recently instituted Sokovia Accords, the worldwide agreement that regulates and tracks those with super powers. However, the restrictions of the Accords are in direct conflict with a personal mission she’s desperate to fulfill. A mission that will test her abilities, her allegiances, and will include some tense encounters with certain S.H.I.E.L.D. team members.</Description>
       <Future>false</Future>
@@ -1934,7 +1917,7 @@
     </Show>
     <Show>
       <Denominator>The Defenders</Denominator>
-      <Netflix>true</Netflix>
+      <Network>Netflix</Network>
       <IMDbLink>http://www.imdb.com/title/tt4230076/</IMDbLink>
       <Description>Daredevil, Jessica Jones, Luke Cage, and Iron Fist team up to fight crime in New York City.</Description>
       <Future>true</Future>
@@ -1951,7 +1934,7 @@
     </Show>
     <Show>
       <Denominator>The Punisher</Denominator>
-      <Netflix>true</Netflix>
+      <Network>Netflix</Network>
       <IMDbLink>http://www.imdb.com/title/tt5675620/</IMDbLink>
       <Description></Description>
       <Future>true</Future>
@@ -1968,7 +1951,7 @@
     </Show>
     <Show>
       <Denominator>Runaways</Denominator>
-      <Netflix>false</Netflix>
+      <Network>Hulu</Network>
       <IMDbLink>http://www.imdb.com/title/tt1236246/</IMDbLink>
       <Description>After discovering their parents are super-villains in disguise, a group of teenagers band together to run away from their homes in order to atone for their parents' actions and to discover the secrets of their origins.</Description>
       <Future>true</Future>
@@ -1978,6 +1961,31 @@
           <Year>2019</Year>
           <IMDbLink>http://www.imdb.com/title/tt1236246/episodes?season=1</IMDbLink>
           <Future>true</Future>
+          <Episodes>
+          </Episodes>
+        </Season>
+      </Seasons>
+    </Show>
+    <Show>
+      <Denominator>WHIH News Front</Denominator>
+      <Network>YouTube</Network>
+      <IMDbLink>http://www.imdb.com/title/tt5296048/</IMDbLink>
+      <Description>A series of news bulletins presented by reporter Christine Everhart.</Description>
+      <Future>true</Future>
+      <Seasons>
+        <Season>
+          <Number>1</Number>
+          <Year>2015</Year>
+          <IMDbLink>http://www.imdb.com/title/tt5296048/episodes?season=1</IMDbLink>
+          <Future>false</Future>
+          <Episodes>
+          </Episodes>
+        </Season>
+        <Season>
+          <Number>2</Number>
+          <Year>2016</Year>
+          <IMDbLink>http://www.imdb.com/title/tt5296048/episodes?season=2</IMDbLink>
+          <Future>false</Future>
           <Episodes>
           </Episodes>
         </Season>

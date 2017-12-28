@@ -37,9 +37,9 @@ namespace Cyprom.MarvelCinematicUniverse.Helpers
 
     public class TimelineFilterEventArgs : EventArgs
     {
-        public readonly bool MoviesEnabled;
-        public readonly bool OneShotsEnabled;
-        public readonly bool ShowsEnabled;
+        public bool MoviesEnabled { get; private set; }
+        public bool OneShotsEnabled { get; private set; }
+        public bool ShowsEnabled { get; private set; }
 
         public TimelineFilterEventArgs(bool moviesEnabled, bool oneShotsEnabled, bool showsEnabled)
         {

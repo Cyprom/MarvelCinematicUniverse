@@ -80,8 +80,10 @@
       <DependentUpon>SearchResultControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Helpers\EventHelper.cs" />
+    <Compile Include="Helpers\NetworkHelper.cs" />
     <Compile Include="Helpers\SearchHelper.cs" />
     <Compile Include="Interfaces\IVideo.cs" />
+    <Compile Include="Models\Network.cs" />
     <Compile Include="Models\ParentChildCollection.cs" />
     <Compile Include="Models\ChildOf.cs" />
     <Compile Include="Models\OneShot.cs" />
@@ -283,6 +285,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="marvel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logos\abc.png" />
+    <Resource Include="Images\Logos\freeform.png" />
+    <Resource Include="Images\Logos\hulu.png" />
+    <Resource Include="Images\Logos\netflix.png" />
+    <Resource Include="Images\Logos\youtube.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

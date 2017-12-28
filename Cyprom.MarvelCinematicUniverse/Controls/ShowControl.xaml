@@ -22,10 +22,10 @@
 
         <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
             <Button ToolTip="IMDb" Click="ShowImdb">
-                <Image Source="../Images/imdb.png" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                <Image Source="../Images/imdb.png" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MaxHeight="100" />
             </Button>
-            <Button Name="btnNetflix" HorizontalAlignment="Right" Visibility="Hidden" ToolTip="This is a Netflix show" Click="ShowNetflix">
-                <Image Source="../Images/netflix.png" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+            <Button Name="btnNetwork" HorizontalAlignment="Right" Visibility="Hidden" Click="ShowNetwork">
+                <Image Name="imgNetwork" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MaxHeight="100" />
             </Button>
         </StackPanel>
 

@@ -10,7 +10,7 @@ namespace Cyprom.MarvelCinematicUniverse.Models
         }
 
         public string Denominator;
-        public bool Netflix;
+        public string Network;
         public string IMDbLink;
         public string Description;
         public bool Future { get; set; }

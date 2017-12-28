@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Windows;
+using System.Reflection;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 using Cyprom.MarvelCinematicUniverse.Models;
@@ -24,6 +25,15 @@ namespace Cyprom.MarvelCinematicUniverse.Controls
             }
         }
 
+        private Network _network;
+        public Network Network
+        {
+            get
+            {
+                return _network;
+            }
+        }
+
         public ShowControl(object parent, Show show) : base(parent)
         {
             InitializeComponent();
@@ -37,10 +47,21 @@ namespace Cyprom.MarvelCinematicUniverse.Controls
             {
                 Header = _show.Denominator;
                 txtDescription.Text = _show.Description;
-                if (_show.Netflix)
+                _network = NetworkHelper.GetNetwork(_show.Network);
+
+                if (_network != null)
                 {
-                    btnNetflix.Visibility = Visibility.Visible;
+                    btnNetwork.ToolTip = _network.Name;
+                    imgNetwork.Source = new BitmapImage(new Uri("pack://application:,,,/Cyprom.MarvelCinematicUniverse;component/Images/Logos/" + _network.Logo));
+                    btnNetwork.Visibility = Visibility.Visible;
                 }
+                else
+                {
+                    btnNetwork.ToolTip = string.Empty;
+                    imgNetwork.Source = null;
+                    btnNetwork.Visibility = Visibility.Collapsed;
+                }
+
                 foreach (var season in _show.Seasons)
                 {
                     pnlSeasons.Children.Add(new SeasonControl(this, season));
@@ -61,9 +82,12 @@ namespace Cyprom.MarvelCinematicUniverse.Controls
             InternetHelper.ShowWebpage(_show.IMDbLink);
         }
 
-        private void ShowNetflix(object sender, RoutedEventArgs e)
+        private void ShowNetwork(object sender, RoutedEventArgs e)
         {
-            InternetHelper.ShowWebpage("http://www.netflix.com");
+            if (_network != null)
+            {
+                InternetHelper.ShowWebpage(_network.Webpage);
+            }
         }
 
         protected override bool CheckFuture()

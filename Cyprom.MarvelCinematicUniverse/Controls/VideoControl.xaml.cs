@@ -37,6 +37,10 @@ namespace Cyprom.MarvelCinematicUniverse.Controls
             {
                 SearchHelper.RegisterSearchable(this);
             }
+            if (inTimeline)
+            {
+                EventHelper.TimelineFilterChanged += UpdateTypeVisibility;
+            }
         }
 
         public void Refresh()
@@ -75,6 +79,22 @@ namespace Cyprom.MarvelCinematicUniverse.Controls
         protected override bool CheckFuture()
         {
             return Video.Future;
+        }
+
+        private void UpdateTypeVisibility(object sender, TimelineFilterEventArgs e)
+        {
+            switch (_video.GetType().Name)
+            {
+                case "Movie":
+                    Visibility = e.MoviesEnabled ? Visibility.Visible : Visibility.Collapsed;
+                    break;
+                case "OneShot":
+                    Visibility = e.OneShotsEnabled ? Visibility.Visible : Visibility.Collapsed;
+                    break;
+                case "Episode":
+                    Visibility = e.ShowsEnabled ? Visibility.Visible : Visibility.Collapsed;
+                    break;
+            }
         }
     }
 }

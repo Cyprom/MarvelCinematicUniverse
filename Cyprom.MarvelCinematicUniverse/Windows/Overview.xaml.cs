@@ -4,12 +4,12 @@ using System.Linq;
 using System.Windows;
 using System.Reflection;
 using System.ComponentModel;
+using System.Windows.Controls;
 using System.Collections.Generic;
 using Cyprom.MarvelCinematicUniverse.Models;
 using Cyprom.MarvelCinematicUniverse.Helpers;
 using Cyprom.MarvelCinematicUniverse.Controls;
 using Cyprom.MarvelCinematicUniverse.Interfaces;
-using System.Windows.Controls;
 
 namespace Cyprom.MarvelCinematicUniverse.Windows
 {
@@ -54,6 +54,14 @@ namespace Cyprom.MarvelCinematicUniverse.Windows
 
             // Apply settings
             EventHelper.RaiseSettingsChangedEvent(this);
+        }
+
+        private void TimelineFilterChanged(object sender, RoutedEventArgs e)
+        {
+            if (chkMovies != null && chkOneShots != null && chkShows != null)
+            {
+                EventHelper.RaiseTimelineFilterChangedEvent(this, chkMovies.IsChecked.GetValueOrDefault(), chkOneShots.IsChecked.GetValueOrDefault(), chkShows.IsChecked.GetValueOrDefault());
+            }
         }
 
         private void AdjustSettings(object sender, RoutedEventArgs e)
